@@ -8,6 +8,7 @@
 
 - **[kaigo-dx](https://kaigo-dx.vercel.app/)** — 介護記録AIアシスト(B2B SaaS)。話すだけで介護記録が完成。
   → **[事例紹介](https://github.com/takepon7/kaigo-dx-case-study)**(設計判断・アーキテクチャ解説)
+- **[biz-english-master](https://biz-english-master.vercel.app/)** — AIビジネス英語コーチ。12シナリオ × 3企業文化モードで実践的にロールプレイ
 - **[supplement-app](https://github.com/takepon7/supplement-app)** — サプリ管理アプリ。「Build & Scrap」で本当に必要なものだけを残す
 - **そいね**(開発中)— 朗読(昔話・落語・子守唄)で寝かしつけるアプリ。Flutter + Style-Bert-VITS2
 
