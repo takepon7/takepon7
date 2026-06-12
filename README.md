@@ -1,47 +1,55 @@
 こんにちは、TKDRです 👋
-個人の習慣化アプリから事業所向けの業務SaaSまで、自分や身近な人の課題を起点にものを作っています。
+Claude Code で個人開発をしています。本業は人事を10年。働きながら、ひとりでアプリやサービスを作っています。
+---
+
+## 作っているもの
+
+### [そいね](https://apps.apple.com/jp/app/id6775675437)
+
+昔話・落語・子守唄の朗読で寝かしつける iOS アプリ。子どもの寝かしつけで毎晩声がかれていたのがきっかけでした。SwiftUI + Azure Neural TTS。
+
+### じぶん軸 *(もうすぐ公開)*
+
+12問の質問から「自分の軸」を言語化するキャリア自己分析 iOS アプリ。人事の仕事で何百人と面談してきた経験が下敷きにあります。Apple Foundation Models によるオンデバイス推論（外部 API ゼロ）。
+
+### [sakigake](https://sakigake.dev)
+
+Claude Code / AI エージェントネイティブな日本語 SaaS ボイラープレート。毎回ゼロから組むのが大変な土台を、一式まとめました。318テスト / DDD 違反0（dependency-cruiser で CI 強制） / subagent 4体同梱。
+
+### [kaigo-dx](https://kaigo-dx-assist.com)
+
+話すだけで介護記録が完成する B2B SaaS。現場の方が入力に割く時間を減らしたくて作りました。Stripe 本番検証済。  
+→ [設計・アーキテクチャの詳細](https://github.com/takepon7/kaigo-dx-case-study)
+
+### [papatto-hp](https://papatto-hp.com)
+
+24時間納品のホームページ制作サービス。Google Places API → LLM 生成パイプラインで構成。月額ゼロ円。
+
+### [biz-english-master](https://biz-english-master.com)
+
+外資・グローバル企業向け AI ビジネス英語コーチ。12シナリオ × 3企業文化モード。
+
+### gtm-os *(開発中)*
+
+個人開発者向けの軽量 GTM ツール。見込み客管理・今日やること自動生成・AI 下書き・週次レポート。kaigo-dx の営業活動を自分で使いながら作っています。
 
 ---
 
-#### 🛠 私が取り組んでいること
+## 書いたもの
 
-- **[biz-english-master](https://biz-english-master.vercel.app/)** — 外資・グローバル企業勤務者向けのAIビジネス英語コーチ。12シナリオ × 3企業文化モードでロールプレイ。Next.js 16 + Clerk + Gemini 2.5 + Stripe + PWA
-- **[sakigake（魁）](https://sakigake.dev)**（開発中）— Claude Code / AIエージェントネイティブな日本語ファーストSaaSボイラープレート。厳格なDDD構成（318 tests / 130 modules / DDD違反0 / ADR×5）
-- **[kaigo-dx](https://kaigo-dx.vercel.app/)** — 介護記録AIアシスト(B2B SaaS)。話すだけで介護記録が完成。
-  → **[事例紹介](https://github.com/takepon7/kaigo-dx-case-study)**(設計判断・アーキテクチャ解説)
-- **面談記録型のB2B SaaS**(開発中)— 業界特化のAI議事録。DDDの戦術的設計を本格適用したNext.js + Clerk Organizations + Supabase RLS + Whisperの構成
-  → **[事例紹介](https://github.com/takepon7/claude-code-ddd-case-study)**(Claude Code + DDD のベストプラクティス)
-  → **[Zenn記事](https://zenn.dev/takepon7/articles/3dd56bd4c46304)**(AIの提案を採用・却下・後回しに分けた設計判断ログ)
-- **[supplement-app](https://github.com/takepon7/supplement-app)** — サプリ管理アプリ。「Build & Scrap」で本当に必要なものだけを残す
-- **[papatto-hp](https://papatto-hp.com)** — AIでHPを24時間納品する制作サービス（運営中）。Google Places API → LLM生成のパイプライン
-- **[そいね](https://apps.apple.com/jp/app/id6775675437)**(公開済み)— 朗読(昔話・落語・子守唄)で寝かしつけるアプリ。SwiftUI + Azure Neural TTS
+- [Claude Code が出した提案を却下する技術 — 個人開発SaaSをDDDで作りながら学んだこと（Zenn）](https://zenn.dev/takepon7/articles/3dd56bd4c46304)
+- Stripe 本番審査 24 時間通過記 — Qiita
+- 介護 SaaS 開発記 — Qiita
 
-#### 🎯 現在
+---
 
-Webエンジニアへの転向を準備中。動くプロダクトと、なぜそう設計したかの両方を残すことを意識しています。
+## 技術スタック
 
-設計判断はADRや記事に残し、AIと共同開発する中で「自分が決めたこと」を切り分けるのが習慣です。
-特に Claude Code との協働では、AIの提案を採用・後回し・却下に分けて記録し、「判断する人」であることを示すよう意識しています。
+TypeScript / Swift — Next.js / SwiftUI — Supabase / Stripe / Clerk — Claude Code subagents — DDD
 
-フロントからバックエンド、決済・認証まで一通り触りながら、なぜこの設計にしたのかを説明できるエンジニアを目指しています。プロダクト全体を俯瞰して動かせる人になることが当面の目標です。
+---
 
-直近は、個人開発者の「作れるけど売れない」を解決するGTM支援ツールを開発中です。
+## 連絡先
 
-#### ⚒ 技術スタック
-
-- **言語**: TypeScript / Swift / Dart
-- **Web**: Next.js (App Router) / React 19 / Tailwind CSS v4
-- **モバイル**: Flutter / SwiftUI
-- **バックエンド**: Supabase (PostgreSQL + RLS) / Stripe / Clerk
-- **インフラ**: Vercel
-- **開発スタイル**: Claude Code subagents運用、DDD、ADRベースの設計記録
-
-#### 📝 書いたもの
-
-- [Claude Code が出した提案を却下する技術 - 個人開発SaaSをDDDで作りながら学んだこと](https://zenn.dev/takepon7/articles/3dd56bd4c46304) — Zenn
-
-#### 📫 お問い合わせ
-
-- 📧 [takeponn7@gmail.com](mailto:takeponn7@gmail.com)
-- 🐦 [X (@takepon_7)](https://x.com/takepon_7)
-- 🔗 ライブデモ: [biz-english-master](https://biz-english-master.vercel.app/) / [kaigo-dx](https://kaigo-dx.vercel.app/)
+X: [@takepon_7](https://x.com/takepon_7)  
+Mail: [takeponn7@gmail.com](mailto:takeponn7@gmail.com)
