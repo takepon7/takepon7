@@ -1,4 +1,5 @@
 こんにちは、TKDRです 👋
+
 Claude Code で個人開発をしています。本業は人事を10年。働きながら、ひとりでアプリやサービスを作っています。
 ---
 
@@ -52,4 +53,5 @@ TypeScript / Swift — Next.js / SwiftUI — Supabase / Stripe / Clerk — Claud
 ## 連絡先
 
 X: [@takepon_7](https://x.com/takepon_7)  
+Portfolio: [作ったもの一覧](https://portfolio-site-xi-lime.vercel.app/)  
 Mail: [takeponn7@gmail.com](mailto:takeponn7@gmail.com)
